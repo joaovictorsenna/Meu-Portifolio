@@ -1,0 +1,39 @@
+/* Define a animação fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Aplica o fade-in ao #root */
+#root {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card-title {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  /* Cor de fundo interna */
+  border-radius: 9999px;
+  /* rounded-full */
+}
+
+.card-title::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  /* background: linear-gradient(90deg, rgba(255, 94, 0, 1) 0%, rgba(255, 195, 0, 1) 100%); */
+  background: linear-gradient(135deg, #007cf0 0%, #00dfd8 50%, #38b2ac 100%);
+
+  border-radius: 9999px;
+  /* Aplicando o arredondamento ao pseudo-elemento */
+}

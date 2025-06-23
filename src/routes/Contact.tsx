@@ -1,4 +1,4 @@
-import React, { useState, type FormEvent, type ChangeEvent } from "react";
+import { useState, type FormEvent, type ChangeEvent } from "react";
 import emailjs from "emailjs-com"; // Importando EmailJS
 import "./StyledRoutes/Contact.css";
 

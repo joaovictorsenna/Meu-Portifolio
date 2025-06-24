@@ -42,7 +42,7 @@ export default function About() {
                                     </li>
                                     <li className="p-1 leading-none">
                                         <a
-                                            href="https://www.instagram.com/sennaa_dev/"
+                                            href="https://github.com/joaovictorsenna"
                                             className="text-base font-medium text-gray-300 hover:text-[#ff4d4d]"
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export default function About() {
                                     <li className="p-1 leading-none">
                                         <a
                                             href="/Curriculo.pdf"
-                                            download="Curriculo_Millena_Medeiros.pdf"
+                                            download="Currículo_João_Sena_Lopes.pdf"
                                             className="text-base font-medium text-gray-300 hover:text-[#f9cb28]"
                                         >
                                             Currículo

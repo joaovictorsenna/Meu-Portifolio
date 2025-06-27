@@ -56,10 +56,26 @@ const projectsData: Project[] = [
     },
     {
         id: uuidv4(),
+        name: " Transação API",
+        description: " Este projeto é uma API REST para gerenciar transações e calcular estatísticas das transações realizadas nos últimos 60 segundos. A API foi desenvolvida com Java e Spring Boot.",
+        primaryLanguage: "Java",
+        url: "https://github.com/joaovictorsenna/lembrete-de-remedio",
+        imageUrl: "/img-project/transacao.png",
+    },
+    {
+        id: uuidv4(),
+        name: " Encurtador de URL ",
+        description: " Este é um projeto de encurtador de URLs desenvolvido com Spring Boot, JPA, e H2 (ou outro banco relacional). Ele permite que você envie uma URL longa e receba uma URL curta, que redireciona para o endereço original. As URLs curtas expiram automaticamente após 30 dias.",
+        primaryLanguage: "Java",
+        url: "https://github.com/joaovictorsenna/urldev",
+        imageUrl: "/img-project/url.png",
+    },
+    {
+        id: uuidv4(),
         name: " Lembrete de Remédio",
         description: " Lembrete de Remédio é um aplicativo web simples e responsivo, desenvolvido com Next.js, TypeScript e TailwindCSS, que permite configurar lembretes de 8 em 8 horas para tomar remédios. Ele salva os dados no navegador e exibe alertas automáticos no horário programado.",
         primaryLanguage: "NextJS",
-        url: "https://github.com/joaovictorsenna/lembrete-de-remedio",
+        url: "https://github.com/joaovictorsenna/transacao-api",
         homepageUrl: "https://lembrete-de-remedio-4884.vercel.app/",
         imageUrl: "/img-project/lembrete-remedio.png",
     },
@@ -74,6 +90,8 @@ const Projects = () => {
             return ["Node.js", "PHP"].includes(project.primaryLanguage);
         } else if (filter === "Frontend") {
             return ["Typescript", "Javascript", "HTML/CSS", "NextJS", "ReactJs"].includes(project.primaryLanguage);
+        } else if (filter === "Backend") {
+            return ["Java", "PHP", "Node.Js", "Javascript"].includes(project.primaryLanguage);
         } else if (filter === "Python") {
             return project.primaryLanguage === "Python";
         }
@@ -90,6 +108,7 @@ const Projects = () => {
             <div className="px-4 m-4 p-4 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0" data-aos="fade-down-right">
                 <button onClick={() => setFilter("")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent hover:border-transparent hover:border-[3px] hover:border-image-[linear-gradient(to right, #ec4899, #f43f5e, #f59e0b)] hover:border-image-slice-[1] hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Todos</button>
                 <button onClick={() => setFilter("Frontend")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent hover:border-transparent hover:border-[3px] hover:border-image-[linear-gradient(to right, #ec4899, #f43f5e, #f59e0b)] hover:border-image-slice-[1] hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Frontend</button>
+                <button onClick={() => setFilter("Backend")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent hover:border-transparent hover:border-[3px] hover:border-image-[linear-gradient(to right, #ec4899, #f43f5e, #f59e0b)] hover:border-image-slice-[1] hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Backend</button>
                 <button onClick={() => setFilter("Fullstack")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent hover:border-transparent hover:border-[3px] hover:border-image-[linear-gradient(to right, #ec4899, #f43f5e, #f59e0b)] hover:border-image-slice-[1] hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Fullstack</button>
                 <button onClick={() => setFilter("Python")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent hover:border-transparent hover:border-[3px] hover:border-image-[linear-gradient(to right, #ec4899, #f43f5e, #f59e0b)] hover:border-image-slice-[1] hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Python</button>
 

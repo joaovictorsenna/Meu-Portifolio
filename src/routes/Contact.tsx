@@ -21,7 +21,7 @@ const Contact = () => {
                 "service_bilewkf",
                 "template_03e9ukx",
                 templateParams,
-                "template_m78r3fa"
+                "WeV5Ly08NJYBdHC2N"
             )
             .then((response) => {
                 console.log("SUCCESS!", response.status, response.text);

@@ -19,7 +19,7 @@ const Contact = () => {
         emailjs
             .send(
                 "service_bilewkf",
-                "template_03e9ukx",
+                "template_m78r3fa",
                 templateParams,
                 "WeV5Ly08NJYBdHC2N"
             )

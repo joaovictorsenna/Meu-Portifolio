@@ -18,10 +18,10 @@ const Contact = () => {
 
         emailjs
             .send(
-                "service_o39t20f",
-                "template_srzza8z",
+                "service_bilewkf",
+                "template_03e9ukx",
                 templateParams,
-                "Mj8biUOP5YG5l4FEr"
+                "template_m78r3fa"
             )
             .then((response) => {
                 console.log("SUCCESS!", response.status, response.text);

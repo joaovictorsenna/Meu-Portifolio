@@ -41,7 +41,7 @@ const projectsData: Project[] = [
         name: "LANDING PAGE PETLEVET",
         description: "Este projeto é uma landing page desenvolvida para a clínica veterinária Petlevet, utilizando REACTJS COM NEXTJS. Ela oferece uma experiência de usuário intuitiva e responsiva, proporcionando informações sobre os serviços oferecidos pela clínica e permitindo que os usuários se conectem com a equipe por meio de formulários de contato.",
         primaryLanguage: "NextJS",
-        url: "https://github.com/millenxs/bot-apostas-telegram",
+        url: "https://github.com/joaovictorsenna/petlevet",
         homepageUrl: "https://petlevet.vercel.app/",
         imageUrl: "/img-project/petlevet.png",
     },
